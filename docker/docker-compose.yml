@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
   presto-coordinator:
     container_name: prestroid-coordinator
@@ -6,10 +6,5 @@ services:
     ports:
       - "8080:8080"
 
-  presto-worker-A:
-    container_name: prestroid-worker-A
+  presto-worker:
     image: jkok005/prestroid-worker:latest  
-
-  presto-worker-B:
-    container_name: prestroid-worker-B
-    image: jkok005/prestroid-worker:latest
